@@ -1,0 +1,182 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JanSushi</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="{% static 'script.js' %}"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="section1">
+            <div class="logo"><img src="{% static 'img/logo.png' %}" alt=""></div>
+            <div class="nav">
+                <a href="{% url 'basket' %}" class="test">
+                    <div class="menu">
+                        <img src="{% static 'img/basket.png' %}" alt="">
+                        <div class="text">Корзина</div>
+                    </div>
+                </a>
+                <div class="menu">
+                    <a href="tel:+77719865511"><img src="{% static 'img/call.png' %}" alt=""></a>
+                    <div class="text">+7 777 001 97 97</div>
+                </div>
+                <div class="menu">
+                    <a href="https://api.whatsapp.com/send?phone=87719865511"><img src="{% static 'img/whatsapp.png' %}" alt=""></a>
+                </div>
+                <div class="menu">
+                    <a href="https://www.instagram.com/instagram/"><img src="{% static 'img/instagram.png' %}" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="section2">
+            <table>
+                <tr>
+                    <td>
+                        <div class="left">
+                            <div class="text">Доставка суши <br> и пиццы</div>
+                            <div class="time">Время работы с 11:00 до 22:00</div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="">
+                            <img class="slider" src="{% static 'img/slider1/group1.png' %}" alt="">
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="menu-contentsnt" align="center" style="background-image: url('{% static '/img/bg1.png' %}')">
+        <div class="text">Меню</div>
+        <table>
+            <tr>
+                <td>
+                    <a href="{% url 'katalog' 'pizza'%}">
+                        <div class="card" align="center" onmouseover="test()">
+                            <div>
+                                <img src="{% static 'img/menu/pizza.png' %}" alt="">
+                            </div>
+                            <div class="text">Пицца</div>
+                        </div>
+                    </a>
+                </td>
+                <td>
+                    <a href="{% url 'katalog' 'cup'%}">
+                        <div class="card" align="center">
+                            <div>
+                                <img src="{% static 'img/menu/cup.png' %}" alt="">
+                            </div>
+                            <div class="text">Напитки</div>
+                        </div>
+                    </a>
+                </td>
+                <td>
+                    <a href="{% url 'katalog' 'salad'%}">
+                        <div class="card" align="center">
+                            <div>
+                                <img src="{% static 'img/menu/salad.png' %}" alt="">
+                            </div>
+                            <div class="text">Салаты</div>
+                        </div>
+                    </a>
+                </td>
+                <td>
+                    <a href="{% url 'katalog' 'french'%}">
+                        <div class="card" align="center">
+                            <div>
+                                <img src="{% static 'img/menu/french.png' %}" alt="">
+                            </div>
+                            <div class="text">Закуски</div>
+                        </div>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="{% url 'katalog' 'sushi'%}">
+                        <div class="card" align="center">
+                            <div>
+                                <img src="{% static 'img/menu/sushi.png' %}" alt="">
+                            </div>
+                            <div class="text">Суши</div>
+                        </div>
+                    </a>
+                </td>
+                <td>
+                    <a href="{% url 'katalog' 'set'%}">
+                        <div class="card" align="center">
+                            <div>
+                                <img src="{% static 'img/menu/sets.png' %}" alt="">
+                            </div>
+                            <div class="text">Сеты</div>
+                        </div>
+                    </a>
+                </td>
+                <td>
+                    <a href="{% url 'katalog' 'sauce'%}">
+                        <div class="card" align="center">
+                            <div>
+                                <img src="{% static 'img/menu/sous.png' %}" alt="">
+                            </div>
+                            <div class="text">Соусы</div>
+                        </div>
+                    </a>
+                </td>
+                <td>
+                    <a href="{% url 'katalog' 'twister'%}">
+                        <div class="card" align="center">
+                            <div>
+                                <img src="{% static 'img/menu/twister.png' %}" alt="">
+                            </div>
+                            <div class="text">Твистер</div>
+                        </div>
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="footer" align="center">
+        <table>
+            <tr>
+                <td>
+                    <div class="be">
+                        <div class="text">Будьте с нами</div>
+                        <div class="text2">Мы создаем приятную и душевную<br> атмосферу для работы, чтобы она <br>передоваласьб от нашего персонала Вам.</div>
+                    </div>
+                </td>
+                <td>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12821.071235853535!2d9.435088583008332!3d36.547655118367345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fc966d811c57e3%3A0x9298200b05f22d60!2z0KLQtdGB0YLRg9GALCDQotGD0L3QuNGB!5e0!3m2!1sru!2skz!4v1618905362248!5m2!1sru!2skz" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="some">
+                        <div class="address">
+                            <div>
+                                <img src="{% static 'img/geo.png' %}" alt="">
+                            </div>
+                            <div class="text">Нур Султан, Жургенова 28</div>
+                        </div>
+                        <div class="deliver">
+                            <div>
+                                <img src="{% static 'img/post.png' %}" alt="">
+                            </div>
+                            <div class="text">Бесплатная доставка от 4000тг <br>в ближайщие районы</div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div align="center" class="reks">
+                        <div class="text">Реквезиты для оплаты каспий</div>
+                        <div class="kaspi">0123 4567 8901 1112</div>
+                        <div class="name">Олжас Жанболатулы</div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

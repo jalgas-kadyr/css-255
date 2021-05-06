@@ -1,0 +1,86 @@
+body{
+    margin: 0px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.back{
+    display: flex;
+    margin-left: 100px;
+    margin-top: 60px;
+}
+
+.back img{
+    margin-top: 27px;
+}
+.back div{
+    margin: 5px;
+    font-family: Oswald,sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 71px;
+    color: #1B1919;
+}
+
+.card{
+    width: 300px;
+    height: 520px;
+    background-color: #1B1919;
+    margin: 20px;
+}
+
+.card .name{
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+}
+
+.card .description{
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+    height: 70px;
+}
+
+.op{
+    padding: 20px;
+}
+
+.pricee{
+    display: flex;
+    margin-top: 30px;
+    margin-left: 75px;
+}
+
+.price{
+    background-color: white;
+    color: red;
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FF0000;
+    padding: 5px;
+}
+
+.korzina button{
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    border: 0px;
+    background-color: #FF0000;
+    padding: 5px;
+}
